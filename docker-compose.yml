@@ -1,6 +1,6 @@
 services:
   nip46-signer:
-    image: ghcr.io/nogringo/nip46_dev_signer:latest
+    image: ghcr.io/nogringo/nip46-dev-signer:latest
     container_name: nip46-dev-signer
     restart: unless-stopped
     environment:
