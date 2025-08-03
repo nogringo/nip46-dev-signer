@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import { finalizeEvent, nip04, nip44, getPublicKey } from "nostr-tools";
 import { SimplePool, useWebSocketImplementation } from 'nostr-tools/pool';
 import { hexToBytes } from "nostr-tools/utils";
@@ -5,8 +6,15 @@ import WebSocket from 'ws';
 
 useWebSocketImplementation(WebSocket)
 
+// Private key must be provided via environment variable
+const privateKey = process.env.PRIVATE_KEY;
+if (!privateKey) {
+  console.error('PRIVATE_KEY environment variable is required');
+  process.exit(1);
+}
+
 const config = {
-  privateKey: '8b5ba3be4b1a801d843c726a015b3c69b9bb32b2ffaf945d3d3384c2ea68f99a',
+  privateKey,
   bunkerSecret: 'devsecret123',
   relays: [
     'wss://relay.damus.io',

@@ -4,4 +4,4 @@ This is a bunker made for devs, it do not send auth challenge and the bunker url
 
 ### Bunker url
 
-bunker://324d7280df042e8705af8b7af44929e8e3cb48e4f4be20965ce96d3ab263f726?relay=wss://relay.damus.io&relay=wss://relay.nostr.band&relay=wss://relay.nsec.app&secret=devsecret123
+bunker://a1fe3664f7a2b24db97e5b63869e8011c947f9abd8c03f98befafd27c38467d2?relay=wss://relay.damus.io&relay=wss://relay.nostr.band&relay=wss://relay.nsec.app&secret=devsecret123
